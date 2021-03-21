@@ -1,10 +1,9 @@
-# UTS-adsi
-
-## UTS - Applied Data Science for Innovation
+# UTS - Applied Data Science for Innovation
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/87173adee17848bb9dcc12cf495135d4)](https://app.codacy.com/gh/rudecat/UTS-adsi?utm_source=github.com&utm_medium=referral&utm_content=rudecat/UTS-adsi&utm_campaign=Badge_Grade)
 
 This repository is to document course projects using CRISP-DM framework, and to demonstrate what I have learned and how I approached challenges.
 
+==============================
 # Assignment-1 Predict Cancer Mortality Rate
 ==============================
 ## Objective
@@ -40,3 +39,31 @@ Select a number of regression models as candidates, and pick the final champion 
 - [Full Project](assignment-1/)
 - [Detailed README](assignment-1/README.md)
 - [Complete Report](assignment-1/reports/Assignment%20D%20-%20KaiPing%20Wang.pdf)
+
+==============================
+# Assignment-2 Predict Car Buying Owners
+==============================
+## Objective
+The goal of this experiment is to accurately predict if an existing customer is more likely to buy a new car. The dataset contains 16 different features (age_band, gender, car_model ... etc).
+
+The result of this model can be used for targeting leads of a marketing campaign.
+## Approach
+### Select Data
+- Select all feautres and data
+### Clean Data
+- Some missing data in age_band and gender. Due to the potential feature significance, instead of replacing missing value with existing value, we are using ‘OTHERS’ for missing value. By doing this, we don’t contaminate the importance of existing value.
+### Feature Engineering
+- Label encoding all categorical data.
+## Model Selection
+Select a number of classifier models as candidates, and pick the final champion in evaluation stage based on performance. Fine tune these models further using hyperparameters.
+- LogisticRegression
+- KNeighborsClassifier
+- RandomForestClassifier
+  - random_state
+  - criterion
+  - n_estimators
+  - max_depth
+## Links
+- [Full Project](assignment-2/)
+- [Detailed README](assignment-2/README.md)
+- [Complete Report](assignment-2/reports/Assignment%202%20-%20KaiPing%20Wang.pdf)
